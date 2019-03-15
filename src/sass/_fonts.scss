@@ -19,7 +19,7 @@
     }*/
 
 @font-face {
-    font-family: 'Museo Sans Cyrl 300';
+    font-family: 'Museo Sans Light';
     src: url('../fonts/MuseoSansCyrlNew/MuseoSansCyrl-300.eot');
     src: local('../fonts/MuseoSansCyrlNew/MuseoSansCyrl-300'),
         url('../fonts/MuseoSansCyrlNew/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
@@ -30,7 +30,7 @@
     
     
 @font-face {
-    font-family: 'Museo Sans Cyrl 700';
+    font-family: 'Museo Sans Bold';
     src: url('../fonts/MuseoSansCyrlNew/MuseoSansCyrl-700.eot');
     src: local('../fonts/MuseoSansCyrlNew/MuseoSansCyrl-700'),
         url('../fonts/MuseoSansCyrlNew/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
@@ -40,12 +40,12 @@
     }
 
 @mixin reg {
-    font-family: 'Museo Sans Cyrl 300';
+    font-family: 'Museo Sans Light';
     font-weight: 300;
 }
 
     
 @mixin bold {
-    font-family: 'Museo Sans Cyrl 700';
+    font-family: 'Museo Sans Bold';
     font-weight: 700;
 }
