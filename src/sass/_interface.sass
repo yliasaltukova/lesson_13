@@ -1,3 +1,6 @@
+*
+    box-sizing: border-box
+
 body
     +reg
 .container
@@ -19,7 +22,43 @@ body
     padding: 18px 30px
     font-size: 13px
     +bold
+    &:hover
+        background-color: lighten($main-color, 15%)
+        cursor: pointer
+.section
+    padding-top: 50px
+    padding-bottom: 90px
+    &-title
+        font-size: 24px
+        +bold
+    &-subtitle
+        display: block
+        font-size: 16px
+    &-call
+        width: 46%
+        margin-right: 74px
+        font-size: 15px
+        line-height: 24px
+    &-tel
+        font-size: 15px
+        line-height: 24px
+        h3
+            margin: 0
+            font-size: 15px
+            +bold
+.input
+    border: 1px solid $border-input
+    padding: 20px 26px
+    font-size: 15px
+    border-radius: 10px
+
+@media (max-width: 1200px)
+    .section
+        &-call
+            width: 80%
+            margin-bottom: 15px
 
 @media (max-width: 768px)
     img
         max-width: 100%
+

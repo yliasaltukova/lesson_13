@@ -33,6 +33,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light';
   font-weight: 300;
@@ -64,6 +68,60 @@ body {
   font-size: 13px;
   font-family: 'Museo Sans Bold';
   font-weight: 700;
+}
+
+.button:hover {
+  background-color: #ffe04d;
+  cursor: pointer;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.section-call {
+  width: 46%;
+  margin-right: 74px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.section-tel {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.section-tel h3 {
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .section-call {
+    width: 80%;
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -135,7 +193,7 @@ body {
 
 .hero-text {
   flex-basis: 50%;
-  padding-right: 130px;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -165,6 +223,10 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -213,5 +275,86 @@ body {
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+}
+
+.offer {
+  background: url("../img/offer/offer-bg.png") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.offer-block {
+  color: #333333;
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+  font-size: 16px;
+}
+
+.offer-phone {
+  display: flex;
+  margin-top: 31px;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+  .offer-phone {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
   }
 }
