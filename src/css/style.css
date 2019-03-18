@@ -363,3 +363,26 @@ body {
     padding-right: 0;
   }
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  display: none;
+}
+
+.modal_active {
+  display: flex;
+}
+
+.modal-dialog {
+  background-color: #ffd200;
+  width: 350px;
+  height: 150px;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
