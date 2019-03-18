@@ -117,6 +117,11 @@ body {
   border-radius: 10px;
 }
 
+.input:focus {
+  outline: none;
+  border: 1px solid #ffd200;
+}
+
 @media (max-width: 1200px) {
   .section-call {
     width: 80%;
