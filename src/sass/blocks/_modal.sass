@@ -1,10 +1,16 @@
 .modal
     position: fixed
     top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(white, 0.9)
     display: none
     &_active
         display: flex
     &-dialog
+        position: relative
+        margin: auto
         background-color: $main-color
         width: 350px
         height: 150px
@@ -13,3 +19,15 @@
             top: 0
             right: 0
             position: absolute
+        
+.button2
+    position: fixed
+    bottom: 0
+    &_title
+        padding: 20px
+        background-color: #ffd200
+        border-radius: 10px
+        outline: none
+        +bold
+
+        

@@ -11,3 +11,14 @@ $(document).ready(function(){
         modal.removeClass('modal_active');
     });
 });
+
+
+$(document).ready(function(){
+    
+    
+    $('.button2_title').click(function(){
+        $('html').animate({scrollTop: 0}, 2000);
+            
+    });
+});
+
