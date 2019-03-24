@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ремонт Квартир</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -98,10 +99,43 @@
                 </div>
             </div>
         </section>
+
+
+        <section class="section-portfolio">
+        <div class="container">
+                <h2 class="section-title portfolio__title">Работая с 2007 года,
+                    мы сделали более 500 ремонтов в квартирах и домах
+                </h2>
+            
+
+            <div class="slider">
+                <div class="slider__item"><img class="slider__img" src="img/portfolio/slider_1.jpg"></div>
+                <div class="slider__item"><img class="slider__img" src="img/portfolio/slider_2.jpg"></div>
+                <div class="slider__item"><img class="slider__img" src="img/portfolio/slider_3.jpg"></div>
+                <div class="slider__item"><img class="slider__img" src="img/portfolio/slider_1.jpg"></div>
+                <div class="slider__item"><img class="slider__img" src="img/portfolio/slider_2.jpg"></div>
+                <div class="slider__item"><img class="slider__img" src="img/portfolio/slider_3.jpg"></div>
+            </div>
+
+            <div class="arrows portfolio__arrows">
+                <div class="arrows__left">
+                    <img src="img/portfolio/right-arrow.png">
+                </div>
+                <div class="arrows__right">
+                    <img src="img/portfolio/left-arrow.png">
+                </div>         
+            </div>
+        </div>
+        </section>
+
+
+
+
     </main>
 
-    
-    <div class="modal" id="modal">
+
+
+    <!--<div class="modal" id="modal">
         <div class="modal-dialog">
             <button class="modal-dialog__close" id="close">&times;</button>
             <h4 class="modal-dialog__title">Всплывающее окно</h4>
@@ -111,7 +145,7 @@
 
     <div class="button2">
         <button class="button2_title">Click</button>
-    </div>
+    </div>-->
 
     <!--<script src="js/main.js"></script>-->
 
@@ -121,6 +155,36 @@
     crossorigin="anonymous"></script>
 
     <script src="js/modal.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: $('.arrows__left'),
+                nextArrow: $('.arrows__right'),
+                responsive:[
+                {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    
+  ]
+            });
+        });
+
+
+    </script>
 
 </body>
 </html>
