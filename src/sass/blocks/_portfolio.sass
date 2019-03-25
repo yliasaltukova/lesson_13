@@ -4,18 +4,25 @@
         background-size: 50%
 .portfolio
     &__title
-        max-width: 500px
         margin: auto
         margin-bottom: 100px
         padding-top: 100px
         line-height: 45px
         color: $text-color
+        font-size: 30px
     &__arrows
         max-width: 120px
         margin: auto
         margin-top: 68px
         display: flex
         justify-content: space-between
+        padding-bottom: 100px
 .slider
     &__img
         margin: auto
+
+
+@media (max-width: 500px)
+    .section
+        &-portfolio
+            background: $hero-color
