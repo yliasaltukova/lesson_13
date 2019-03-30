@@ -808,3 +808,16 @@ body {
     display: inline-grid;
   }
 }
+
+@media (max-width: 325px) {
+  .interview-list__counter {
+    margin: 0;
+    max-width: 100%;
+    width: 35px;
+  }
+  .interview-list__text {
+    padding-left: 6px;
+    width: 210px;
+    max-width: 100%;
+  }
+}
