@@ -14,15 +14,16 @@
     &__input
         width: 100%
         max-width: 370px
-        margin-bottom: 15px
+        margin: 5px 0
         height: 65px
     &__button
         width: 100%
         max-width: 370px
         height: 70px 
-        margin-top: 15px
+        margin-top: 10px
         margin-bottom: 30px
         font-size: 16px
+        outline: none
 .interview
     padding-right: 70px
     &__title
@@ -63,7 +64,7 @@
         line-height: 33px
     &__subtitle
         display: block
-        margin-bottom: 95px
+        margin-bottom: 50px
         font-size: 16px
     &__description
         display: block
@@ -91,12 +92,27 @@
             margin-bottom: 15px
         &__subtitle
             margin-bottom: 30px
+    
+
+@media (max-width: 974px)
+    .brif
+        background-image: url('../img/brif/brif-color.png'), url('../img/brif/brif-right.jpg')
+        background-position: top center, center bottom
+        background-size: 100% 43%, cover
+        background-repeat: repeat-x, no-repeat
+        &-block
+            flex-direction: column
+    .error
+        margin-bottom: 5px
+    #brif
+        &-form
+            display: inline-grid
 
 @media (max-width: 768px)
     .brif
         background-image: url('../img/brif/brif-color.png'), url('../img/brif/brif-right.jpg')
         background-position: top center, center bottom
-        background-size: 100% 50%, cover
+        background-size: 100% 40%, cover
         background-repeat: repeat-x, no-repeat
         &-block
             flex-direction: column
@@ -104,4 +120,9 @@
             margin-top: 60px
     .form
         &__title
-            margin-top: 100px 
+            margin-top: 100px
+    .error
+        margin-bottom: 5px
+    #brif
+        &-form
+            display: inline-grid
