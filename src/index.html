@@ -83,8 +83,12 @@
                 </span>
 
                 <form action="#" id="offer-form" class="form offer__form wow rotateInDownLeft">
+                <div class="input-wrap">
                     <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+                </div>
+                <div class="input-wrap">
                     <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+                </div>
                     <button class="button offer__button">Получить бесплатный дизайн-проект</button>
                 </form>
 
@@ -365,12 +369,12 @@
                 },
                 messages: {
                     username:{
-                        required: "Заполните поле",
+                        required: "Заполните поле!",
                         minlength: jQuery.validator.format("Осталось {0} символа!"),
                         maxlength: jQuery.validator.format("Не больше {0} символов!")
                     },
                     phone: {
-                        required: "Укажите телефон"
+                        required: "Укажите телефон!"
                     }
                 }
             });

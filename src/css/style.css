@@ -358,6 +358,9 @@ body {
   .offer-phone {
     flex-direction: column;
   }
+  .input-wrap {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -367,6 +370,9 @@ body {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .input-wrap {
+    width: 100%;
   }
 }
 
@@ -737,6 +743,10 @@ body {
   display: block;
 }
 
+.input-wrap {
+  display: inline-block;
+}
+
 @media (max-width: 1200px) {
   .brif__form {
     padding-left: 30px;
@@ -783,6 +793,9 @@ body {
   #brif-form {
     display: inline-grid;
   }
+  .form__title {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -797,9 +810,10 @@ body {
   }
   .brif__form {
     margin-top: 60px;
+    margin-right: 20px;
   }
   .form__title {
-    margin-top: 100px;
+    margin-top: 30px;
   }
   .error {
     margin-bottom: 5px;
