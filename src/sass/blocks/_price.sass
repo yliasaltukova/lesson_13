@@ -14,10 +14,6 @@
     text-align: center
     border: 1px solid $border-card
     transition: 0.2s
-    &:hover
-        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
-        .card__image:before
-            opacity: 1
     &__text
         padding: 40px
     &__title
@@ -41,9 +37,6 @@
         color: $text-color
         font-size: 16px
         position: relative
-        &:hover
-            &:after
-                height: 12px
         &:after
             content: ''
             position: absolute
@@ -59,6 +52,19 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
+
+@media (min-width: 992px)
+    .card
+        &:hover
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+            .card__image:before
+                opacity: 1
+        &__link
+            &:hover
+                &:after
+                    height: 12px
+
+
 
 @media (max-width: 760px)
     .cards
